@@ -1,4 +1,4 @@
-# Todo Summary Assistant
+# Todo Summary Assistant - Vishal Kumar Gautam
 
 This project is a modern Todo application that allows users to add, view, and delete todo items. The app also features an AI-powered summary generation for all pending todos, which is then sent to a Slack channel for easy team updates. The backend is powered by Supabase for database management and uses Cohere API for generating natural language summaries. The frontend is built with React and styled using Tailwind CSS for a clean and responsive user interface.
 
