@@ -44,8 +44,8 @@ router.delete('/todos/:id', async (req, res) => {
 // });
 router.post('/summarize', async (req, res) => {
   try {
-    const todos = await getTodos(); // ✅ await because it's async now
-    const pendingTodos = todos.filter(t => !t.done); // ✅ Now this works
+    const todos = await getTodos(); 
+    const pendingTodos = todos.filter(t => !t.done);
 
     const summary = await generateSummary(pendingTodos);
     await postToSlack(summary);
