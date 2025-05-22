@@ -1,0 +1,39 @@
+# Todo Summary Assistant
+
+This project is a modern Todo application that allows users to add, view, and delete todo items. The app also features an AI-powered summary generation for all pending todos, which is then sent to a Slack channel for easy team updates. The backend is powered by Supabase for database management and uses Cohere API for generating natural language summaries. The frontend is built with React and styled using Tailwind CSS for a clean and responsive user interface.
+
+---
+
+## Working Procedure
+
+1. **Setup Backend**
+   - Create a `.env` file in the backend directory.
+   - Add the following environment variables:
+     - `SUPABASE_URL` — your Supabase project URL.
+     - `SUPABASE_KEY` — your Supabase API key.
+     - `COHERE_API_KEY` — your Cohere API key.
+     - `SLACK_WEBHOOK_URL` — your Slack webhook URL.
+   - Install backend dependencies by running `npm install`.
+   - Start the backend server with `npm run start`.
+
+2. **Setup Frontend**
+   - Navigate to the frontend directory.
+   - Install dependencies using `npm install`.
+   - Start the development server using `npm run dev`.
+
+3. **Using the Application**
+   - Open the frontend app in your browser (typically at `http://localhost:5173`).
+   - Add new todos via the input field and add button.
+   - View the list of todos; delete any todo using the provided delete button.
+   - Click the "Summarize & Send to Slack" button to generate a summary of pending todos.
+   - The summary will display below the button and will be sent to the configured Slack channel.
+
+4. **Important Notes**
+   - Ensure the backend server is running before using the frontend.
+   - Double-check that all required environment variables are correctly set in the `.env` file.
+   - The summary functionality relies on the Cohere API for AI-generated summaries.
+   - Todos are stored and retrieved from the Supabase database.
+
+---
+
+Feel free to customize or expand the README as needed!
